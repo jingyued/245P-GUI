@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="mystyle.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Front-end JS Workbench</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.js"></script>
+    <script src="particle.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div id="content">Hello World</div>
+    <button type="button" onclick="myFunction()">Set text color</button>
+
+    <script>
+        function myFunction() {
+            document.getElementById("content").style.color = "blue";
+        }
+    </script>
+
+
+    <button type="button" onclick="myFunction2()">updateContent</button>
+
+    <script>
+        function myFunction2() {
+            document.getElementById("content").updateContent = "Bye-Bye World!";
+        }
+    </script>
+
+</body>
+
+
+</html>
+
+<!--Now you should create another element, say updateContent, 
+    and when you click that, you should update the inner HTML content
+     of the original Hello World to Bye-Bye World!
+Hints:
+Use the predefined HTML button component with the updateContent function.-->
