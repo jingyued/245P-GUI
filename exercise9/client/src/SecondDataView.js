@@ -1,13 +1,13 @@
 
-import Main from "Main.js"
+import Main from "./Main.js"
 import { MAIN_DATA } from "./data.js";
 
 
 
-function ExampleDataView(props, children) {
+function ExampleDataView() {
   return (
     <>
-      <Main content={MAIN_DATA[0].content} />
+      <Main content={MAIN_DATA[1].content} />
     </>
   );
 }

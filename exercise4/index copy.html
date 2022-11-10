@@ -13,23 +13,9 @@
 </head>
 
 <body>
-    <div id="content">Hello World</div>
-    <button type="button" onclick="myFunction()">Set text color</button>
-
-    <script>
-        function myFunction() {
-            document.getElementById("content").style.color = "blue";
-        }
-    </script>
-
-
-    <button type="button" onclick="myFunction2()">updateContent</button>
-
-    <script>
-        function myFunction2() {
-            document.getElementById("content").updateContent = "Bye-Bye World!";
-        }
-    </script>
+    <p id="content">Hello World</p>
+    <button onclick="myFunction()">Set text color</button>
+    <button onclick="updateContent()">updateContent</button>
 
 </body>
 

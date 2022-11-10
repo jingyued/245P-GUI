@@ -70,20 +70,27 @@
     /* add/modify your css properties below this line */
     .wrapper {
       display: flex;
+      flex-direction: row;
+      justify-content: space-between;
     }
 
     .left {
-
       display: flex;
-      text-align: right;
+      text-align: end;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+
+    .left .inner{ 
+      display: flex;
+      text-align: end;
+      flex-direction: column;
       justify-content: flex-end;
       align-items: flex-end;
     }
 
     .right {
-
-      margin-left: 10%;
-      color: purple;
+      display: flex;
       text-align: left;
       display: flex;
     }
@@ -95,12 +102,17 @@
     }
 
     .right .inner {
+      display: flex;
       color: purple;
     }
 
     .center .inner {
+      display: flex;
       text-align: center;
+      justify-content: center;
+      align-items: center;
     }
+
   </style>
 </head>
 

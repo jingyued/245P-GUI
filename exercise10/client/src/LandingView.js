@@ -1,15 +1,74 @@
 
-import Main from "Main.js"
-import { MAIN_DATA } from "./data.js";
+import React, { useState,useEffect } from 'react';
+// const zip = "90210";
+// const country = "US";
+const APIkey = "3010b8ec1285774256a915971cc393e4";
+const lat = "34.0901";
+const lon = "-118.4065";
 
 
+function LandingView() {
 
-function LandingView(props, children) {
+
+const [loadingData, setLoadingData] = useState(true);
+const [error, setError] = useState(false);
+const [emptyData, setEmptyData] = useState(false);
+const [data, setData] = useState(false);
+
+
+useEffect(() => {
+  fetch(
+    `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${APIkey}&units=metric`
+  )
+    // handling responses
+    .then((response) => response.json())
+    // handling normal data state
+    .then((actualData) => {
+      setLoadingData(false);
+      setError(false);
+      setData(actualData);
+      console.log(actualData);
+    })
+    // handling errors
+    .catch((err) => {
+      // console.log(err.message);
+      setLoadingData(false);
+      setError(true);
+    });
+}, []);
+
+
   return (
     <>
-      <Main content={MAIN_DATA[0].content} />
+    {loadingData && error && (
+      <>
+      loadingData: {loadingData ? "loading" : "not loading"}
+      <br />
+      error: {error ? "error" : "no error"}
+      <br />
+      </>
+    )
+    }
+      
+
+      {!loadingData && !error &&(
+      <>
+        location: {data.name}
+        <br />
+        location: {data.main.temp}  
+        <br />
+        maxtem:{data.main.temp_max} 
+        mintem:{data.main.temp_min}
+      </> )}
+
+      
+
+
     </>
   );
+
+
 }
+
 
 export default LandingView;

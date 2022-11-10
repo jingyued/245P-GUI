@@ -14,21 +14,6 @@ import LandingView from "./LandingView";
 import ExampleDataView from "./SecondDataView";
 
 
-function App() {
-  return (
-    <div className="App">
-      <BrowserRouter>
-        <Header />
-        <Sidebar />
-        <Routes>
-          <Route index element={<LandingView />} /> 
-          <Route path="exampledataview" element={<ExampleDataView />}></Route>
-        </Routes>
-        <Footer />
-      </BrowserRouter>
-    </div>
 
-  );
-}
 
 export default App;

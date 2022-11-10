@@ -11,6 +11,13 @@ for (i in books)
     console.log('book title: %s, author: %s ', books[i].title, books[i].author);
 }
 
+function myFunction() {
+  document.getElementById("content").style.color = "blue";
+  }
+function updateContent() {
+  document.getElementById("content").innerHTML = "Bye-Bye World!";
+  }
+
 let p1, p2, p3;
 
 function setup() {
