@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
+.footer {
+    background-color: wheat;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    position: sticky;
+    left: 0;
+    bottom: 0;
+}

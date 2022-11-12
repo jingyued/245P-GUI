@@ -1,15 +1,10 @@
-
 import React, { useState,useEffect } from 'react';
 // const zip = "90210";
 // const country = "US";
 const APIkey = "3010b8ec1285774256a915971cc393e4";
 const lat = "34.0901";
 const lon = "-118.4065";
-
-
 function LandingView() {
-
-
 const [loadingData, setLoadingData] = useState(true);
 const [error, setError] = useState(false);
 const [emptyData, setEmptyData] = useState(false);
@@ -37,7 +32,6 @@ useEffect(() => {
     });
 }, []);
 
-
   return (
     <>
     {loadingData && error && (
@@ -50,19 +44,22 @@ useEffect(() => {
     )
     }
       
-
       {!loadingData && !error &&(
       <>
         location: {data.name}
         <br />
         location: {data.main.temp}  
         <br />
-        maxtem:{data.main.temp_max} 
-        mintem:{data.main.temp_min}
+        minimum and maximum temperatures of the day: {data.main.temp_min}Celsius and {data.main.temp_max}Celsius
+        <br />
+        current weather description: {data.weather[0].description} 
+        <br />
+        wind speed :{data.wind.speed}, wind degree: {data.wind.deg}
+{/* For EXTRA points: use transitions to fade in/out the different states. You can use the React Transition Group library: https://www.npmjs.com/package/react-transition-group */}
+
+
+
       </> )}
-
-      
-
 
     </>
   );

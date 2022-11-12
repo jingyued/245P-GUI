@@ -1,0 +1,12 @@
+.App {
+    display: flex;
+}
+Header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+Sidebar {
+    display: flex;
+}

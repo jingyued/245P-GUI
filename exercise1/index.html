@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- specifies the language code of the page meaning English is used for all the text on the page. -->
 <head>
     <title>CSS Template</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <style>
         * {
             box-sizing: border-box;
         }
-
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
@@ -19,8 +18,8 @@
             background-color: #275;
             padding-top: 50px;
             padding-bottom: 50px;
-            padding-left: 25px;
-            padding-right: 25px;
+            /* padding-left: 25px; */
+            /* padding-right: 25px; */
             text-align: center;
             font-size: 35px;
             color: white;
@@ -28,18 +27,20 @@
 
         /* Style the h1 */
         h1 {
-
             color: green;
         }
 
         /* Style the p */
         p {
-            color: purple;
+            color:#777;
         }
 
         /* Container for flexboxes */
         section {
             display: -webkit-flex;
+            /* (-webkit for Chrome, Safari; -moz for Firefox, -o for Opera,
+             -ms for Internet Explorer) */
+
             display: flex;
         }
 
@@ -60,8 +61,8 @@
 
         /* Style the content */
         article {
-            -webkit-flex: 3;
-            -ms-flex: 3;
+            /* -webkit-flex: 3;
+            -ms-flex: 3; */
             flex: 3;
             background-color: #f1f1f1;
             padding: 10px;
@@ -69,25 +70,27 @@
 
         /* Style the footer */
         footer {
-            background-color: #777;
+            background-color: wheat;
             padding: 10px;
             text-align: center;
             color: white;
+            position: static;
+            left: 0;
+            bottom: 0;
         }
 
-        /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
-        @media (max-width: 600px) {
+        /* Responsive layout - makes the menu and the content (inside the section) 
+        sit on top of each other instead of next to each other */
+        /* @media (max-width: 600px) {
             section {
                 -webkit-flex-direction: column;
                 flex-direction: column;
             }
-        }
+        } */
     </style>
 </head>
 
 <body>
-
-
 
     <header>
         <h2> Cameras</h2>
@@ -138,7 +141,7 @@
 
     <footer>
         <p>Jingyue Dai</p>
-        <a href="https://github.com/jingyued/245p">Github</a>
+        <a href="https://github.com/jingyued/245P-GUI/tree/main/exercise1">Github</a>
     </footer>
 
 </body>

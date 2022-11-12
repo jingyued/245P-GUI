@@ -40,10 +40,8 @@
     }
 
     .center {
-      width: 45%;
       margin: 5%;
       height: 250px;
-
       background-color: red;
       color: white;
     }
@@ -81,7 +79,7 @@
       align-items: flex-end;
     }
 
-    .left .inner{ 
+    .left .inner {
       display: flex;
       text-align: end;
       flex-direction: column;
@@ -92,18 +90,19 @@
     .right {
       display: flex;
       text-align: left;
-      display: flex;
-    }
-
-    .center {
-      display: flex;
-      justify-content: center;
-      align-items: center;
     }
 
     .right .inner {
       display: flex;
       color: purple;
+    }
+
+    .center {
+      display: flex;
+      /* fully flexible so that they absorb any extra space along the main axis. */
+      flex: auto;
+      justify-content: center;
+      align-items: center;
     }
 
     .center .inner {
@@ -112,7 +111,6 @@
       justify-content: center;
       align-items: center;
     }
-
   </style>
 </head>
 

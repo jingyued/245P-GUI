@@ -2,6 +2,7 @@ class Particle {
   constructor(x, y) {
     this.x = x;
     this.y = y;
+
   }
 
   // update the size of the element we render
@@ -21,7 +22,7 @@ class Particle {
 
 class Box extends Particle {
   constructor(x, y) {
-    super(x, y); //继承父类中的参数和方法
+    super(x, y); 
     this.bright = random(255);
     this.r = 10;
   }
@@ -39,22 +40,25 @@ class Box extends Particle {
   }
 }
 
-class Box2 extends Particle {
+class Rec extends Particle {
   constructor(x, y) {
-    super(x, y);
+    super(x, y); 
     this.bright = random(255);
-    this.r = 20;
+    this.a = 10;
+    this.b = 5;
   }
 
   update() {
     super.update();
-    this.r += random(-8, 8);
+    this.a += random(-8, 8);
+    this.b += random(-8, 8);
   }
 
   show() {
     strokeWeight(1);
     stroke(255);
     fill(this.bright);
-    circle(this.x, this.y, this.r);
+    fillRect(this.x, this.y, this.a, this.b);
   }
 }
+

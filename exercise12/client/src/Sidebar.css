@@ -3,22 +3,20 @@
 }
 
 body {
-    display: flex;
-        flex-direction: row;
     font-family: "Lato", sans-serif;
 }
 
 .sidenav {
-    display: flex;
-        flex-direction: column;
-        /* height: 100%; */
-        width: 160px;
-        flex: 3;
-            position: static;
-    background-color: #111;
+    margin-bottom: 90px;
+    height: 500px;
+    width: 160px;
+    position: absolute;
+    z-index: 1;
+    /* top: 200px; */
+    left: 0;
+    background-color: #ccc;
     overflow-x: hidden;
     padding-top: 20px;
-    
 }
 
 .sidenav a {
@@ -33,15 +31,7 @@ body {
     color: #f1f1f1;
 }
 
-.main {
-    display: flex;
-        flex-direction: column;
-        flex: 10;
-        margin-bottom: 100px;
-        font-size: 22px;
-    padding: 0px 10px;
-    text-align: left;
-}
+
 
 @media screen and (max-height: 450px) {
     .sidenav {

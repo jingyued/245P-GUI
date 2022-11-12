@@ -2,7 +2,7 @@ import "./SidebarAndMain.css";
 
 function SidebarAndMain() {
   return (
-    <>
+    <body>
     <div className="sidenav">
         <a href="#about">About</a>
         <a href="#services">Services</a>
@@ -19,7 +19,7 @@ function SidebarAndMain() {
             <p>X Mount lenses for the X Series inherit FUJINON optical technology, which is highly acclaimed by the professionals. The lenses are developed to fully unlock the performance of X Series cameras to achieve superb performance. The X Mount Lenses cover wide range of focal length from ultra wide to telephoto and offer specialty lenses such as cine zoom and macro lens.</p>
             <p>Since our founding, Fujifilm has always pursued to reproduce the color that matches what you remember. The X Series inherits this DNA. Film simulation options deliver warm skin tones, crisp blue hues of the sky and vivid green of lush greenery exactly as your mind remembers in your memory. </p>
     </div>
-   </>
+    </body>
   );
 }
 

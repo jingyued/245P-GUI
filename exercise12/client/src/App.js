@@ -17,14 +17,11 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Header />
-        <body>
         <Sidebar />
         <Routes>
           <Route index element={<LandingView />} />
           <Route path="exampledataview" element={<ExampleDataView />}></Route>
         </Routes>
-        </body>
-
         <Footer />
       </BrowserRouter>
     </div>

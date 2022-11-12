@@ -1,11 +1,11 @@
 // CSS and other resources
 
-import "./App.css";
+// import "./App.css";
 import LandingView from "./LandingView";
 
 // External Libraries
 
-import React, { useState,useEffect } from 'react';
+import React from 'react';
 
 // Components
 

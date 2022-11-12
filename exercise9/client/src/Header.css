@@ -1,20 +1,24 @@
 * {
+    /* 告诉浏览器：你想要设置的边框和内边距的值是包含在 width 内的。这样就可以让浏览器呈现出带有指定宽度和高度的框，并把边框和内边距放入框中。 */
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
+    /* font-family 可以把多个字体名称作为一个"回退" 系统来保存。如果浏览器不支持第一个字体，则会尝试下一个。 */
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .header {
-    margin-left: 10%;
-    overflow: hidden;
+    /* overflow属性指定如果内容溢出一个元素的框，会发生什么。 */
+    overflow: hidden; 
     background-color: #f1f1f1;
+    /* 上填充和下填充是 20px 右填充和左填充是 10px */
     padding: 20px 10px;
 }
 
 .header a {
+    /* 元素向左浮动。 */
     float: left;
     color: black;
     text-align: center;
@@ -26,16 +30,15 @@ body {
 }
 
 .header a.logo {
-    margin-left: 50px;
     font-size: 25px;
     font-weight: bold;
 }
-
+/* 选择鼠标在链接上面时 */
 .header a:hover {
     background-color: #ddd;
     color: black;
 }
-
+/* 选择活动链接 */
 .header a.active {
     background-color: dodgerblue;
     color: white;
@@ -45,6 +48,7 @@ body {
     float: right;
 }
 
+/* 使用 @media 查询，可以针对不同的媒体类型定义不同的样式。 */
 @media screen and (max-width: 500px) {
     .header a {
         float: none;
