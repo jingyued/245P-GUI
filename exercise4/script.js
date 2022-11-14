@@ -25,7 +25,7 @@ function setup() {
   createCanvas(500, 500);
   p1 = new Particle(300, 300);
   p2 = new Box(300, 300);
-  p3 = new Rect(100, 100);
+  p3 = new Rect(300, 300);
 }
 
 function draw() {

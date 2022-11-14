@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-body {
+wrapper {
     display: flex;
         flex-direction: row;
     font-family: "Lato", sans-serif;
@@ -12,8 +12,7 @@ body {
     display: flex;
         flex-direction: column;
         /* height: 100%; */
-        width: 160px;
-        flex: 3;
+        width: 15%;
             position: static;
     background-color: #111;
     overflow-x: hidden;
@@ -36,7 +35,7 @@ body {
 .main {
     display: flex;
         flex-direction: column;
-        flex: 10;
+        width: 85%;
     margin-bottom: 100px;
     font-size: 22px;
     padding: 0px 10px;
@@ -46,8 +45,7 @@ body {
 @media screen and (max-height: 450px) {
     .sidenav {
         padding-top: 15px;
-    }
-
+}
     .sidenav a {
         font-size: 18px;
     }

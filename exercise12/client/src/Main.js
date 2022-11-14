@@ -3,7 +3,7 @@ import "./Main.css";
 function Main(props, children) {
   return (
     <>
-      <div className="main">{props.content}</div>
+      <div className="main" dangerouslySetInnerHTML={{__html: props.content}}></div>
     </>
   );
 }

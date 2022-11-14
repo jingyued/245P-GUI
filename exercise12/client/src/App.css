@@ -1,12 +1,9 @@
 .App {
     display: flex;
+    flex-direction: column;
 }
-Header {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-
-}
-Sidebar {
-    display: flex;
+    
+                .sidebarMain {
+                    display: flex;
+        flex-direction: row;
 }

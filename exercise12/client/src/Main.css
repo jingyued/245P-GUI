@@ -3,7 +3,8 @@
 }
 
 .main {
-    margin-left: 160px;
+    width: 85%;
+        /* margin-left: 160px; */
     /* margin-bottom: 160px; */
     /* Same as the width of the sidenav */
     font-size: 28px;

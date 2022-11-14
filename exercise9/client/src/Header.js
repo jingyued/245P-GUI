@@ -11,7 +11,7 @@ function Header() {
           <a className="active" href="#home">
             Home
           </a>
-          <a href="./exampledataview">Contact</a>
+          <a href="https://www.fujifilm.com/us/en/contact">Contact</a>
           <a href="https://www.fujifilm.com/us/en/about">About</a>
         </div>
       </div>

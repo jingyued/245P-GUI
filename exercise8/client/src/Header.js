@@ -4,7 +4,7 @@ function Header() {
   return (
     <>
       <div className="header">
-        <a href="/Users/dai/Desktop/245P/exercise8/client/1.jpg" className="logo">
+        <a href="./client/1.jpg" className="logo">
         fujifilm
         </a>
         <div className="headerRight">

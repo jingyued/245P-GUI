@@ -27,7 +27,7 @@ button {
     background-color: rgb(100, 150, 225);
     border: none;
     color: white;
-    width: 30%;
+    /* width: 30%; */
     padding: 15px 20px;
     text-decoration: none;
     margin: 20px 2px;

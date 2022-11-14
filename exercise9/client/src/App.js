@@ -1,6 +1,6 @@
 // CSS and other resources
 
-// import "./App.css";
+import "./App.css";
 
 // External Libraries
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -17,13 +17,13 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Header />
-        <body>
-        <Sidebar />
-        <Routes>
-          <Route index element={<LandingView />} />
-          <Route path="exampledataview" element={<ExampleDataView />}></Route>
-        </Routes>
-        </body>
+        <div className="sidebarMain">
+          <Sidebar />
+          <Routes>
+            <Route index element={<LandingView />} />
+            <Route path="exampledataview" element={<ExampleDataView />}/>
+          </Routes>
+        </div>
 
         <Footer />
       </BrowserRouter>

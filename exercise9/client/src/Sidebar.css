@@ -5,17 +5,15 @@
 body {
     font-family: "Lato", sans-serif;
 }
-
 .sidenav {
     display: flex;
-        flex-direction: column;
+    flex-direction: column;
         /* height: 100%; */
-        width: 160px;
-        flex: 3;
-            position: static;
-            background-color: #111;
-            overflow-x: hidden;
-            padding-top: 20px;
+    width: 20%;
+        position: static;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 20px;
 }
 
 .sidenav a {
@@ -29,8 +27,6 @@ body {
 .sidenav a:hover {
     color: #f1f1f1;
 }
-
-
 
 @media screen and (max-height: 450px) {
     .sidenav {

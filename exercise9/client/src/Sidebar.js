@@ -9,8 +9,8 @@ function Sidebar() {
   return (
     <>
       <div className="sidenav">
-        <Link to="/">Landing View</Link>
-        <Link to="exampledataview">Example Data View</Link>
+        <Link to="/">X System</Link>
+        <Link to="exampledataview">GFX System</Link>
       </div>
     </>
   );

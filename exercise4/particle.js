@@ -2,7 +2,6 @@ class Particle {
   constructor(x, y) {
     this.x = x;
     this.y = y;
-
   }
 
   // update the size of the element we render
@@ -40,25 +39,27 @@ class Box extends Particle {
   }
 }
 
-class Rec extends Particle {
+class Rect extends Particle {
   constructor(x, y) {
     super(x, y); 
-    this.bright = random(255);
-    this.a = 10;
-    this.b = 5;
+    // this.bright = 621;
+    this.a = 100;
+    this.b = 50;
   }
 
   update() {
-    super.update();
-    this.a += random(-8, 8);
-    this.b += random(-8, 8);
+    this.x += random(-5, 5);
+    this.y = this.x;
+    // this.a += random(-8, 8);
+    // this.b += random(-8, 8);
   }
 
   show() {
     strokeWeight(1);
     stroke(255);
-    fill(this.bright);
-    fillRect(this.x, this.y, this.a, this.b);
+    // noStroke();
+    fill("#8B0000");
+    rect(this.x, this.y, this.a, this.b);
   }
 }
 
