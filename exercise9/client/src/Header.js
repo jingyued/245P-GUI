@@ -1,4 +1,5 @@
 import "./Header.css";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -11,8 +12,8 @@ function Header() {
           <a className="active" href="#home">
             Home
           </a>
-          <a href="https://www.fujifilm.com/us/en/contact">Contact</a>
-          <a href="https://www.fujifilm.com/us/en/about">About</a>
+          <Link to="/">X System</Link>
+        <Link to="exampledataview">GFX System</Link>
         </div>
       </div>
     </>

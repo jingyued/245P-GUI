@@ -4,6 +4,7 @@
     margin: 0 auto;
     width: 600px;
     overflow: hidden;
+        /*only one img is shown*/
     /* do not display part over 600px */
 }
 

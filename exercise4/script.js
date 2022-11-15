@@ -6,9 +6,20 @@ const books = [
  {title: "Moby Dick", author: "Herman Melville"}
 ]
 
-for (i in books)  
+const result1= books.filter(book => book.author != "George Orwell")
+console.log(result1)
+
+const result2= books.filter(book => book.author != "George Orwell" && book.author != "Herman Melville" )
+for (i in result1)  
 {
-    console.log('book title: %s, author: %s ', books[i].title, books[i].author);
+  console.log(i)
+    console.log('book title: %s, author: %s ', result1[i].title, result1[i].author);
+}
+
+for (i in result2)  
+{
+  console.log(i)
+    console.log('book title: %s, author: %s ', result2[i].title, result2[i].author);
 }
 
 function myFunction() {
