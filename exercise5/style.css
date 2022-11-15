@@ -18,6 +18,7 @@
     width: 100%;
     background: #cfcfcf;
     border-bottom: 1px solid darkgray;
+    /*The cursor CSS property sets the mouse cursor,if any, to show when the mouse pointer is over an element. */
     cursor: pointer;
 }
 

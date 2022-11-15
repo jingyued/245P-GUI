@@ -15,6 +15,7 @@ const LoginForm = () => {
   const handlePasswordChange = (event) => {
     setPasswordValue(event.target.value);
 };  
+
   <LoginForm/>
 
   // we are calling the LoginForm component in the actual render of the App
@@ -23,13 +24,16 @@ const LoginForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault(); // this prevents the browser to refresh when the submit button is clicked
     const formData = {
-      username: usernameRef.current.value, // we are accessing the value of the input field through the ref's current instance
-      password: passwordRef.current.value,
+      username: usernameRef.current.value, //accessing the value of the input field through the ref's current instance
+      password: passwordRef.current.value, //（Get the value of an Input field using a Ref in React）
+
     };
     const json = JSON.stringify(formData, null, 4);
     console.clear(); // clearing previous console logs
     console.log(json); // showing what we actually submitted thru the form
   };
+
+
   // render method
     return(
         <> 
@@ -42,6 +46,8 @@ const LoginForm = () => {
         label="username"
         id="username"
         type="text"
+        //  Since handleChange runs on every keystroke to update the React state, 
+        // the displayed value will update as the user types.
         value={usernameValue}
         onChange={handleUsernameChange}
         />

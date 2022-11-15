@@ -1,0 +1,34 @@
+.myClass-appear {
+    opacity: 0;
+}
+
+.myClass-appear-active {
+    opacity: 1;
+    transition: opacity 5000ms;
+}
+
+.myClass-enter {
+    opacity: 0;
+}
+
+.myClass-enter-active {
+    opacity: 1;
+    transition: opacity 5000ms;
+}
+
+.myClass-enter-done {
+    opacity: 1;
+}
+
+.myClass-exit {
+    opacity: 1;
+}
+
+.myClass-exit-active {
+    opacity: 0;
+    transition: opacity 5000ms;
+}
+
+.myClass-exit-done {
+    opacity: 0;
+}
